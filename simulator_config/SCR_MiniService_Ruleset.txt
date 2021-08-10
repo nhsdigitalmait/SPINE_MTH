@@ -1,0 +1,83 @@
+# SCR_GP_Summary_Rulset Simulator rule definition file for ITK Testbench
+#Chris Berry
+#ITK Message file Name						Request to MTH		Match		Response from MTH	Response to ITK
+#PSISDocumentListQuery_success.xml			QUPC_IN160101UK05	9449310580	QUPC_IN160102UK05	PSISDocumentListDataRetrieval
+#PSISDocumentListQuery_SoapFault.xml		QUPC_IN160101UK05	9454201085	SOAPFault			SOAPFault
+#PSISDocumentListQuery_MCCI.xml				QUPC_IN160101UK05	9449310106	MCCI_IN010000UK13	SOAPFault#
+#PSISDocumentDataRequest_success.xml		QUPC_IN160103UK05	9449310645	QUPC_IN160104UK05	PSISDocumentDataRetrieval
+#PSISDocumentDataRequest_SoapFault.xml		QUPC_IN160103UK05	9444459993	SOAPFault			SOAPFault
+#PSISDocumentDataRequest_MCCI.xml			QUPC_IN160103UK05	9346424613	MCCI_IN010000UK13	SOAPFault
+#PSISDocumentListDataRetrieval_QUQI.xml		QUPC_IN160101UK05	9454202103	QUQI_IN010000UK14	List Query Act Failed
+#PSISDocumentDataRetrieval_QUQI.xml			QUPC_IN160101UK05	9454202111	QUQI_IN010000UK14	List Query Act Failed
+#
+BEGIN RESPONSES
+no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
+QUPC_IN160101UK05_QUPC_IN160102UK05_Successful_Response TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/PSISDocumentListDataRetrieval_QUPC_IN160102UK05.xml 202 nhs:names:services:psisquery/QUPC_IN160102UK05
+QUPC_IN160103UK05_QUPC_IN160104UK05_Successful_Response TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/PSISDocumentDataRetrieval_QUPC_IN160104UK05.xml 202 nhs:names:services:psisquery/QUPC_IN160104UK05
+MCCI_IN010000UK13_async_response TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/MCCI_IN010000UK13_async_template.xml	202 urn:nhs:names:services:psisquery/MCCI_IN010000UK13
+MCCI_IN010000UK13_Success	TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/MCCI_IN010000UK13_Success.xml 202 urn:nhs:names:services:psisquery/MCCI_IN010000UK13
+QUQI_IN010000UK14_Response	TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/QUQI_IN010000UK14_Response.xml 202 urn:nhs:names:services:psisquery/QUQI_IN010000UK14
+soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
+do_process	NONE	0
+END RESPONSES
+
+BEGIN SUBSTITUTIONS
+__MESSAGEID__	UUID
+__CREATION_TIMESTAMP__ HL7datetime
+__ORIG_MESSAGEID__ Xpath /soap:Envelope/soap:Body/child::*/hl7:id/@root
+__SYNC_RCV_ASID__ Xpath /soap:Envelope/soap:Header/hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__SIAB_ASID_SYSTEMPROPERTY__ Property mth.my.asid
+__ACKNOWLEDGED_MESSAGEID_XPATH__ Xpath /*[1]/hl7:id/@root
+__ORIGINAL_SND_XPATH__ Xpath /*[1]/hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__MSGID_UUID__ UUID
+__ASYNC_RCV_ASID__ Xpath //hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__ORIGINAL_PRESCRIPTION_ID_XPATH__ Xpath /*[1]/hl7:ControlActEvent/hl7:subject/hl7:PatientPrescriptionReleaseRequest/hl7:id/@root
+__ERROR_VALUE_CODE_LITERAL__ Literal 5000
+__ERROR_VALUE_CODESYSTEM_LITERAL__ Literal 2.16.840.1.113883.2.1.3.2.4.16.34
+__ERROR_VALUE_DISPLAYTEXT_LITERAL__ Literal Unable to process message
+__EVENT_UUID__ UUID
+__ORIGINAL_NHS_NUMBER__ Xpath /SOAP-ENV:Envelope/SOAP-ENV:Body/*[name()='GET_RESOURCE_PERMISSIONS_INUK01']/*[name()='ControlActEvent']/*[name()='getResourcePermissionsRequest']/*[name()='accessControlQuery']/*[name()='resourceContext']/@extension
+__SOAP_ERROR_FAULTCODE_REQUIRED__	Literal	soap:Client
+__SOAP_ERROR_FAULTSTRING_REQUIRED__	Literal	The service/interaction is not supported for the requested URI
+__SOAP_ERROR_CODECONTEXT__ Literal urn:nhs:names:errors:tms
+__SOAP_ERROR_ERRORCODE__ Literal 101
+__SOAP_ERROR_SEVERITY__ Literal Error
+__SOAP_ERROR_LOCATION__ Literal HTTP Header - SOAPAction
+__SOAP_ERROR_DESCRIPTION__ Literal The service/interaction is not supported for the requested URI
+END SUBSTITUTIONS
+
+BEGIN EXPRESSIONS
+QUPC_IN160101UK05_QUPC_IN160102UK05_Successful_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:query/hl7:nHSNumber/hl7:value/@extension 9449310580
+QUPC_IN160101UK05_SOAPFault_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:query/hl7:nHSNumber/hl7:value/@extension 9454201085
+QUPC_IN160101UK05_MCCI_IN010000UK13_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:query/hl7:nHSNumber/hl7:value/@extension 9449310106
+QUPC_IN160101UK05_QUQI_IN010000UK14_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:query/hl7:nHSNumber/hl7:value/@extension 9454202103
+QUPC_IN160103UK05_QUPC_IN160104UK05_Successful_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:query/hl7:nHSNumber/hl7:value/@extension 9449310645
+QUPC_IN160103UK05_SOAPFault_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:query/hl7:nHSNumber/hl7:value/@extension 9444459993
+QUPC_IN160103UK05_MCCI_IN010000UK13_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:query/hl7:nHSNumber/hl7:value/@extension 9346424613
+QUPC_IN160103UK05_QUQI_IN010000UK14_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:query/hl7:nHSNumber/hl7:value/@extension 9454202111
+passthrough	Always
+END EXPRESSIONS
+
+#PSIS PSIS Document List Data Retrieval
+BEGIN RULE
+urn:nhs:names:services:psisquery/QUPC_IN160101UK05
+if QUPC_IN160101UK05_QUPC_IN160102UK05_Successful_Rule then QUPC_IN160101UK05_QUPC_IN160102UK05_Successful_Response else next
+if QUPC_IN160101UK05_SOAPFault_Rule then soap_fault else next
+if QUPC_IN160101UK05_QUQI_IN010000UK14_Rule then QUQI_IN010000UK14_Response else next
+if QUPC_IN160101UK05_MCCI_IN010000UK13_Rule then MCCI_IN010000UK13_async_response
+END RULE
+
+#PSIS Document Data Retrieval
+BEGIN RULE
+urn:nhs:names:services:psisquery/QUPC_IN160103UK05
+if QUPC_IN160103UK05_QUPC_IN160104UK05_Successful_Rule then QUPC_IN160103UK05_QUPC_IN160104UK05_Successful_Response else next
+if QUPC_IN160103UK05_SOAPFault_Rule then soap_fault else next
+if QUPC_IN160103UK05_QUQI_IN010000UK14_Rule then QUQI_IN010000UK14_Response else next
+if QUPC_IN160103UK05_MCCI_IN010000UK13_Rule then MCCI_IN010000UK13_async_response
+END RULE
+
+#Alert Raised
+BEGIN RULE
+urn:nhs:names:services:alerts/COMT_IN000001UK01
+if passthrough then MCCI_IN010000UK13_Success
+END RULE

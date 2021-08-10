@@ -1,0 +1,97 @@
+# PDS2006B Simulator rule definition file for ITK Testbench
+# Richard Robinson, 19th February 2013
+#
+BEGIN RESPONSES
+no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
+QUPA_IN010000UK32_QUPA_IN030000UK32_InvalidMsg_Response TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2006B_Templates/QUPA_IN030000UK32_sync_InvalidMsg.xml	200 urn:nhs:names:services:pdsquery/QUPA_IN030000UK32
+MCCI_IN010000UK13_response TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2006B_Templates/MCCI_IN010000UK13_async_template.xml	202 urn:nhs:names:services:pds/MCCI_IN010000UK13
+QUPA_IN000007UK01_neg TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2006B_Templates/QUQI_IN010000UK14_sync_template.xml	200	urn:nhs:names:services:pdsquery/QUQI_IN010000UK14
+QUPA_IN040000UK32_QUPA_IN050000UK32_Successful_Response TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2006B_Templates/QUPA_IN050000UK32_sync_template.xml 200 urn:nhs:names:services:pdsquery/QUPA_IN050000UK32
+QUPA_IN040000UK32_QUQI_IN010000UK14_Response TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2006B_Templates/QUQI_IN010000UK14_sync_template.xml 200 urn:nhs:names:services:pdsquery/QUQI_IN010000UK14
+soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
+ebXML_error	TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+do_process	NONE	0
+END RESPONSES
+
+BEGIN SUBSTITUTIONS
+__MESSAGEID__	UUID
+__CREATION_TIME__ HL7datetime
+__ORIG_MESSAGEID__ Xpath /soap:Envelope/soap:Body/child::*/hl7:id/@root
+__SYNC_RCV_ASID__ Xpath /soap:Envelope/soap:Header/hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__SYNC_SND_ASID__ Xpath /soap:Envelope/soap:Header/hl7:communicationFunctionRcv/hl7:device/hl7:id/@extension
+__ASYNC_RCV_ASID__ Xpath //hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__JOBID__	UUID
+__SOAP_ERROR_FAULTCODE_REQUIRED__	Literal	soap:Client
+__SOAP_ERROR_FAULTSTRING_REQUIRED__	Literal	The service/interaction is not supported for the requested URI
+__SOAP_ERROR_CODECONTEXT__ Literal urn:nhs:names:errors:tms
+__SOAP_ERROR_ERRORCODE__ Literal 101
+__SOAP_ERROR_SEVERITY__ Literal Error
+__SOAP_ERROR_LOCATION__ Literal HTTP Header - SOAPAction
+__SOAP_ERROR_DESCRIPTION__ Literal The service/interaction is not supported for the requested URI
+__MSGID_UUID__ UUID
+__ACKNOWLEDGED_MESSAGEID_XPATH__ Xpath /*[1]/hl7:id/@root
+__ORIGINAL_SND_XPATH__ Xpath soap:Envelope/soap:Body//hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__SIAB_ASID_SYSTEMPROPERTY__ Property mth.my.asid
+__CREATION_TIMESTAMP__ HL7datetime
+__ERROR_VALUE_CODE_LITERAL__ Literal GE002
+__ERROR_VALUE_CODESYSTEM_LITERAL__ Literal 2.16.840.1.113883.2.1.3.2.4.17.42
+__ERROR_VALUE_DISPLAYTEXT_LITERAL__ Literal Unexpected business error encountered.
+__SOAP_MSG_ID_UUID__ UUID
+__SENDER_END_POINT_XPATH__ Xpath /soap:Envelope/soap:Header/wsa:From/wsa:Address
+__RECEIVER_END_POINT_XPATH__ Xpath /soap:Envelope/soap:Header/wsa:To
+__INBOUND_SOAP_MSGID_XPATH__ Xpath /soap:Envelope/soap:Header/wsa:MessageID
+__CREATION_TIMESTAMP__ HL7datetime
+__ORIGINAL_MSGID_XPATH__ Xpath /soap:Envelope/soap:Body//hl7:id/@root
+__ERROR_LIST_ID__ UUID
+__EB_VERSION__ Literal 2.0
+__ERRORLIST_HIGHEST_SEVERITY_REQUIRED__ Literal Error
+__ERROR_ID__ UUID
+__ERROR_ERRORCODE_REQUIRED__ Literal 402005
+__ERROR_SEVERITY_REQUIRED__ Literal Error
+__ERROR_DESCRIPTION__ Literal An error occurred while finding the defined contract
+__ERROR_CODECONTEXT__ Literal urn:oasis:names:tc:ebxml-msg:service:errors
+__SCN_9407807525_SYSTEMPROPERTY__ Literal 1
+__SCN_9407807746_SYSTEMPROPERTY__ Literal 11
+END SUBSTITUTIONS
+
+BEGIN EXPRESSIONS
+PRPA_IN160000UK30_NoEbxmlAck_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:PdsUpdateRequest/hl7:subject/hl7:patientRole/hl7:id/@extension 9444459772
+PRPA_IN160000UK30_EbxmlError_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:PdsUpdateRequest/hl7:subject/hl7:patientRole/hl7:id/@extension 9444459802
+PRPA_IN160000UK30_MCCI_IN010000UK13_Error_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:PdsUpdateRequest/hl7:subject/hl7:patientRole/hl7:id/@extension 9444459209
+PRPA_IN040000UK30_MCCI_IN0100000UK13_Error_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:PdsRegistrationRequest/hl7:subject/hl7:patientRole/hl7:patientPerson/hl7:birthTime/@value 20091212
+QUPA_IN020000UK31_SOAPFault_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:query/hl7:person.name/hl7:value/hl7:family WAPLES
+QUPA_IN020000UK31_ebXMLError_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:query/hl7:person.name/hl7:value/hl7:family PRITCHARD
+PDSSimpleQuery_InvalidMsgMatch_Rule	XpathEquals /soap:Envelope/soap:Body/hl7:QUPA_IN010000UK32/hl7:ControlActEvent/hl7:query/hl7:person.name/hl7:value/hl7:family MORGENSTERN
+QUPA_IN040000UK32_QUPA_IN050000UK32_Successful_Rule XpathEquals /soap:Envelope/soap:Body/hl7:QUPA_IN040000UK32/hl7:ControlActEvent/hl7:query/hl7:person.id/hl7:value/@extension 9407807541
+QUPA_IN040000UK32_QUQI_IN010000UK14_Rule XpathEquals /soap:Envelope/soap:Body/hl7:QUPA_IN040000UK32/hl7:ControlActEvent/hl7:query/hl7:person.id/hl7:value/@extension 9407807542
+passthrough	Always
+END EXPRESSIONS
+
+BEGIN RULE
+urn:nhs:names:services:pdsquery/QUPA_IN010000UK32
+if PDSSimpleQuery_InvalidMsgMatch_Rule then QUPA_IN010000UK32_QUPA_IN030000UK32_InvalidMsg_Response 
+END RULE
+
+BEGIN RULE
+urn:nhs:names:services:pds/PRPA_IN160000UK30
+if PRPA_IN160000UK30_NoEbxmlAck_Rule then no_ebXMLack_response else next
+if PRPA_IN160000UK30_EbxmlError_Rule then ebXML_error else next
+if PRPA_IN160000UK30_MCCI_IN010000UK13_Error_Rule then MCCI_IN010000UK13_response else next
+END RULE
+
+BEGIN RULE
+urn:nhs:names:services:pds/PRPA_IN040000UK30
+if PRPA_IN040000UK30_MCCI_IN0100000UK13_Error_Rule then MCCI_IN010000UK13_response
+END RULE
+
+BEGIN RULE
+urn:nhs:names:services:pdsquery/QUPA_IN020000UK31
+if QUPA_IN020000UK31_SOAPFault_Rule then soap_fault else next
+if QUPA_IN020000UK31_ebXMLError_Rule then ebXML_error else next
+END RULE
+
+BEGIN RULE
+urn:nhs:names:services:pdsquery/QUPA_IN040000UK32
+if QUPA_IN040000UK32_QUPA_IN050000UK32_Successful_Rule then QUPA_IN040000UK32_QUPA_IN050000UK32_Successful_Response else next
+if QUPA_IN040000UK32_QUQI_IN010000UK14_Rule then QUPA_IN040000UK32_QUQI_IN010000UK14_Response
+END RULE

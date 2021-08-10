@@ -1,0 +1,85 @@
+<retrievalQueryResponse>
+	<QUPA_IN000009UK03>
+		<id root="__MSGID_UUID__"/>
+		<creationTime value="__CREATION_TIMESTAMP__"/>
+		<versionCode code="3NPfIT6.3.01"/>
+		<interactionId root="2.16.840.1.113883.2.1.3.2.4.12" extension="QUPA_IN000009UK03"/>
+		<processingCode code="P"/>
+		<processingModeCode code="T"/>
+		<acceptAckCode code="NE"/>
+		<acknowledgement typeCode="AA">
+			<messageRef>
+				<id root="__ORIGINAL_MSGID_XPATH__"/>
+			</messageRef>
+		</acknowledgement>
+		<communicationFunctionRcv typeCode="RCV">
+			<device classCode="DEV" determinerCode="INSTANCE">
+				<id root="1.2.826.0.1285.0.2.0.107" extension="__SYNC_RCV_ASID__"/>
+			</device>
+		</communicationFunctionRcv>
+		<communicationFunctionSnd typeCode="SND">
+			<device classCode="DEV" determinerCode="INSTANCE">
+				<id root="1.2.826.0.1285.0.2.0.107" extension="__SYNC_SND_ASID__"/>
+			</device>
+		</communicationFunctionSnd>
+		<ControlActEvent classCode="CACT" moodCode="EVN">
+			<author1 typeCode="AUT">
+				<AgentSystemSDS classCode="AGNT">
+					<agentSystemSDS classCode="DEV" determinerCode="INSTANCE">
+						<id root="1.2.826.0.1285.0.2.0.107" extension="908232220511"/>
+					</agentSystemSDS>
+				</AgentSystemSDS>
+			</author1>
+			<subject typeCode="SUBJ">
+				<PDSResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="OBS" moodCode="EVN">
+					<pertinentInformation typeCode="PERT">
+						<pertinentSerialChangeNumber classCode="OBS" moodCode="EVN">
+							<code code="2" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+							<value value="1"/>
+						</pertinentSerialChangeNumber>
+					</pertinentInformation>
+					<subject typeCode="SBJ">
+						<patientRole classCode="PAT">
+							<id root="2.16.840.1.113883.2.1.4.1" extension="5552448715"/>
+							<patientPerson classCode="PSN" determinerCode="INSTANCE">
+								<administrativeGenderCode code="2"/>
+								<birthTime value="19881123"/>
+								<COCT_MT000201UK02.PartOfWhole classCode="PART">
+									<addr use="H">
+										<streetAddressLine/>
+										<streetAddressLine>2 Allerton Grange Avenue</streetAddressLine>
+										<streetAddressLine/>
+										<streetAddressLine>LEEDS</streetAddressLine>
+										<streetAddressLine>West Yorkshire</streetAddressLine>
+										<postalCode>LS17 6PR</postalCode>
+										<addressKey>17670880</addressKey>
+										<useablePeriod>
+											<low value="20010101"/>
+										</useablePeriod>
+										<id root="2.16.840.1.113883.2.1.3.2.4.18.1" extension="2bydo"/>
+									</addr>
+								</COCT_MT000201UK02.PartOfWhole>
+								<COCT_MT000203UK02.PartOfWhole classCode="PART">
+									<partPerson classCode="PSN" determinerCode="INSTANCE">
+										<name use="L">
+											<prefix>Mrs</prefix>
+											<given>Hyacinth</given>
+											<family>Hedgewicke</family>
+											<validTime>
+												<low value="20130101"/>
+											</validTime>
+											<id root="2.16.840.1.113883.2.1.3.2.4.18.1" extension="27o24"/>
+										</name>
+									</partPerson>
+								</COCT_MT000203UK02.PartOfWhole>
+							</patientPerson>
+						</patientRole>
+					</subject>
+				</PDSResponse>
+			</subject>
+			<queryAck type="QueryAck">
+				<queryResponseCode code="OK"/>
+			</queryAck>
+		</ControlActEvent>
+	</QUPA_IN000009UK03>
+</retrievalQueryResponse>

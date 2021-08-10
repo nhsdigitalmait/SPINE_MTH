@@ -1,0 +1,79 @@
+# ETP_Dispenser_V4_Rulset Simulator rule definition file for ITK Testbench
+# Richard Robinson, 19th February 2013
+#
+BEGIN RESPONSES
+no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
+PORX_IN090101UK31_MCCI_IN010000UK13_0705_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0705.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN090101UK31_MCCI_IN010000UK13_0706_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0706.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN132004UK30_PORX_IN110101UK30_0524_8_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/PORX_IN110101UK30_05_24_2_10_template.xml 202 urn:nhs:names:services:mm/PORX_IN110101UK30
+PORX_IN100101UK31_MCCI_IN010000UK13_0703_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0703.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN080101UK31_MCCI_IN010000UK13_0708_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0708.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN080101UK31_MCCI_IN010000UK13_0709_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0709.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN080101UK31_MCCI_IN010000UK13_1713_4_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_1713_4.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN080101UK31_MCCI_IN010000UK13_0710_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0710.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN080101UK31_MCCI_IN010000UK13_0718_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0718.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500	
+ebXML_error	TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+do_process	NONE	0
+END RESPONSES
+
+BEGIN SUBSTITUTIONS
+__MESSAGEID__	UUID
+__CREATION_TIMESTAMP__ HL7datetime
+__SIAB_ASID_SYSTEMPROPERTY__ Property mth.my.asid
+__ACKNOWLEDGED_MESSAGEID_XPATH__ Xpath /*[1]/hl7:id/@root
+__ORIGINAL_SND_XPATH__ Xpath /*[1]/hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__MSGID_UUID__ UUID
+__ASYNC_RCV_ASID__ Xpath //hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__ORIGINAL_PRESCRIPTION_ID_XPATH__ Xpath /*[1]/hl7:ControlActEvent/hl7:subject/hl7:PatientPrescriptionReleaseRequest/hl7:id/@root
+__ERROR_VALUE_CODE_LITERAL__ Literal 5000
+__ERROR_VALUE_CODESYSTEM_LITERAL__ Literal 2.16.840.1.113883.2.1.3.2.4.16.34
+__ERROR_VALUE_DISPLAYTEXT_LITERAL__ Literal Unable to process message
+__EVENT_UUID__ UUID
+__SOAP_ERROR_FAULTCODE_REQUIRED__	Literal	soap:Client
+__SOAP_ERROR_FAULTSTRING_REQUIRED__	Literal	The service/interaction is not supported for the requested URI
+__SOAP_ERROR_CODECONTEXT__ Literal urn:nhs:names:errors:tms
+__SOAP_ERROR_ERRORCODE__ Literal 101
+__SOAP_ERROR_SEVERITY__ Literal Error
+__SOAP_ERROR_LOCATION__ Literal HTTP Header - SOAPAction
+__SOAP_ERROR_DESCRIPTION__ Literal The service/interaction is not supported for the requested URI
+END SUBSTITUTIONS
+
+BEGIN EXPRESSIONS
+PORX_IN090101UK31_MCCI_IN010000UK13_0705_Rule 	XpathExists /*[1]/hl7:ControlActEvent/hl7:subject/hl7:DispenseClaim/hl7:pertinentInformation1/hl7:pertinentSupplyHeader/hl7:pertinentInformation1/hl7:pertinentSuppliedLineItem/hl7:component/hl7:suppliedLineItemQuantity/hl7:product/hl7:suppliedManufacturedProduct/hl7:manufacturedSuppliedMaterial[hl7:code/@code="321198003"]/hl7:code/@code
+PORX_IN090101UK31_MCCI_IN010000UK13_0706_Rule	XpathExists /*[1]/hl7:ControlActEvent/hl7:subject/hl7:DispenseClaim/hl7:pertinentInformation1/hl7:pertinentSupplyHeader/hl7:pertinentInformation1/hl7:pertinentSuppliedLineItem/hl7:component/hl7:suppliedLineItemQuantity/hl7:product/hl7:suppliedManufacturedProduct/hl7:manufacturedSuppliedMaterial[hl7:code/@code="321112001"]/hl7:code/@code
+PORX_IN132004UK30_PORX_IN110101UK30_0524_8_Rule XpathExists /*[1]/hl7:ControlActEvent/hl7:subject[hl7:PatientPrescriptionReleaseRequest]
+PORX_IN100101UK31_MCCI_IN010000UK13_0703_Rule	XpathExists /*[1]/hl7:ControlActEvent/hl7:subject[hl7:DispenseProposalReturn]
+PORX_IN080101UK31_MCCI_IN010000UK13_0708_Rule	XpathExists /*[1]/hl7:ControlActEvent/hl7:subject/hl7:DispenseNotification/hl7:pertinentInformation1/hl7:pertinentSupplyHeader/hl7:pertinentInformation1/hl7:pertinentSuppliedLineItem/hl7:consumable/hl7:requestedManufacturedProduct/hl7:manufacturedRequestedMaterial[hl7:code/@code="321127001"]/hl7:code/@code
+PORX_IN080101UK31_MCCI_IN010000UK13_0709_Rule	XpathExists /*[1]/hl7:ControlActEvent/hl7:subject/hl7:DispenseNotification/hl7:pertinentInformation1/hl7:pertinentSupplyHeader/hl7:pertinentInformation1/hl7:pertinentSuppliedLineItem/hl7:consumable/hl7:requestedManufacturedProduct/hl7:manufacturedRequestedMaterial[hl7:code/@code="321314006"]/hl7:code/@code
+PORX_IN080101UK31_MCCI_IN010000UK13_1713_4_Rule	XpathExists /*[1]/hl7:ControlActEvent/hl7:subject/hl7:DispenseNotification/hl7:pertinentInformation1/hl7:pertinentSupplyHeader/hl7:pertinentInformation1/hl7:pertinentSuppliedLineItem/hl7:consumable/hl7:requestedManufacturedProduct/hl7:manufacturedRequestedMaterial[hl7:code/@code="321123002"]/hl7:code/@code
+PORX_IN080101UK31_MCCI_IN010000UK13_0710_Rule	XpathExists /*[1]/hl7:ControlActEvent/hl7:subject/hl7:DispenseNotification/hl7:pertinentInformation1/hl7:pertinentSupplyHeader/hl7:pertinentInformation1/hl7:pertinentSuppliedLineItem/hl7:consumable/hl7:requestedManufacturedProduct/hl7:manufacturedRequestedMaterial[hl7:code/@code="321294008"]/hl7:code/@code
+PORX_IN080101UK31_MCCI_IN010000UK13_0718_Rule	XpathExists /*[1]/hl7:ControlActEvent/hl7:subject/hl7:DispenseNotification/hl7:pertinentInformation1/hl7:pertinentSupplyHeader/hl7:pertinentInformation1/hl7:pertinentSuppliedLineItem/hl7:consumable/hl7:requestedManufacturedProduct/hl7:manufacturedRequestedMaterial[hl7:code/@code="321246009"]/hl7:code/@code
+passthrough	Always
+END EXPRESSIONS
+
+
+BEGIN RULE
+urn:nhs:names:services:mm/PORX_IN090101UK31
+if PORX_IN090101UK31_MCCI_IN010000UK13_0705_Rule then PORX_IN090101UK31_MCCI_IN010000UK13_0705_response else next
+if PORX_IN090101UK31_MCCI_IN010000UK13_0706_Rule then PORX_IN090101UK31_MCCI_IN010000UK13_0706_response
+END RULE
+
+BEGIN RULE
+urn:nhs:names:services:mm/PORX_IN132004UK30
+if PORX_IN132004UK30_PORX_IN110101UK30_0524_8_Rule then PORX_IN132004UK30_PORX_IN110101UK30_0524_8_response
+END RULE
+
+BEGIN RULE
+urn:nhs:names:services:mm/PORX_IN100101UK31
+if PORX_IN100101UK31_MCCI_IN010000UK13_0703_Rule then PORX_IN100101UK31_MCCI_IN010000UK13_0703_response
+END RULE
+
+BEGIN RULE
+urn:nhs:names:services:mm/PORX_IN080101UK31
+if PORX_IN080101UK31_MCCI_IN010000UK13_0708_Rule then PORX_IN080101UK31_MCCI_IN010000UK13_0708_response else next
+if PORX_IN080101UK31_MCCI_IN010000UK13_0709_Rule then PORX_IN080101UK31_MCCI_IN010000UK13_0709_response else next
+if PORX_IN080101UK31_MCCI_IN010000UK13_1713_4_Rule then PORX_IN080101UK31_MCCI_IN010000UK13_1713_4_response else next
+if PORX_IN080101UK31_MCCI_IN010000UK13_0710_Rule then PORX_IN080101UK31_MCCI_IN010000UK13_0710_response else next
+if PORX_IN080101UK31_MCCI_IN010000UK13_0718_Rule then PORX_IN080101UK31_MCCI_IN010000UK13_0718_response
+END RULE

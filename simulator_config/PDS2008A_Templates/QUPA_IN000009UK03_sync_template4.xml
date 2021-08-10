@@ -1,0 +1,102 @@
+<retrievalQueryResponse>
+	<QUPA_IN000009UK03>
+		<id root="__MSGID_UUID__"/>
+		<creationTime value="__CREATION_TIMESTAMP__"/>
+		<versionCode code="3NPfIT6.3.01"/>
+		<interactionId root="2.16.840.1.113883.2.1.3.2.4.12" extension="QUPA_IN000009UK03"/>
+		<processingCode code="P"/>
+		<processingModeCode code="T"/>
+		<acceptAckCode code="NE"/>
+		<acknowledgement typeCode="AA">
+			<messageRef>
+				<id root="__ORIGINAL_MSGID_XPATH__"/>
+			</messageRef>
+		</acknowledgement>
+		<communicationFunctionRcv typeCode="RCV">
+			<device classCode="DEV" determinerCode="INSTANCE">
+				<id root="1.2.826.0.1285.0.2.0.107" extension="__SYNC_RCV_ASID__"/>
+			</device>
+		</communicationFunctionRcv>
+		<communicationFunctionSnd typeCode="SND">
+			<device classCode="DEV" determinerCode="INSTANCE">
+				<id root="1.2.826.0.1285.0.2.0.107" extension="__SYNC_SND_ASID__"/>
+			</device>
+		</communicationFunctionSnd>
+		<ControlActEvent classCode="CACT" moodCode="EVN">
+			<author1 typeCode="AUT">
+				<AgentSystemSDS classCode="AGNT">
+					<agentSystemSDS classCode="DEV" determinerCode="INSTANCE">
+						<id root="1.2.826.0.1285.0.2.0.107" extension="908232220511"/>
+					</agentSystemSDS>
+				</AgentSystemSDS>
+			</author1>
+					<subject typeCode="SUBJ">
+						<PDSResponse xmlns:soap="http://www.w3.org/2001/12/soap-envelope" xmlns:nasp="http://spine.nhs.uk/spine-servicev1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:other="urn:some:other:namespace" classCode="OBS" moodCode="EVN">
+							<pertinentInformation typeCode="PERT">
+								<pertinentSerialChangeNumber classCode="OBS" moodCode="EVN">
+									<code code="2" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.35"/>
+									<value value="4"/>
+								</pertinentSerialChangeNumber>
+							</pertinentInformation>
+							<subject typeCode="SBJ">
+								<patientRole classCode="PAT">
+									<id root="2.16.840.1.113883.2.1.4.1" extension="9449310300"/>
+									<patientPerson classCode="PSN" determinerCode="INSTANCE">
+										<administrativeGenderCode code="1"/>
+										<birthTime value="20110402"/>
+										<playedOtherProviderPatient classCode="PAT">
+											<subjectOf typeCode="SBJ">
+												<patientCareProvisionEvent classCode="PCPR" moodCode="EVN">
+													<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.37" code="1"/>
+													<effectiveTime>
+														<low value="20110404"/>
+													</effectiveTime>
+													<id root="2.16.840.1.113883.2.1.3.2.4.18.1" extension="dpsg"/>
+													<performer typeCode="PRF">
+														<assignedEntity classCode="ASSIGNED">
+															<id root="2.16.840.1.113883.2.1.4.3" extension="H81109"/>
+														</assignedEntity>
+													</performer>
+												</patientCareProvisionEvent>
+											</subjectOf>
+										</playedOtherProviderPatient>
+										<COCT_MT000201UK02.PartOfWhole classCode="PART">
+											<addr use="H">
+												<streetAddressLine>DOWNS VIEW</streetAddressLine>
+												<streetAddressLine>EBBISHAM LANE</streetAddressLine>
+												<streetAddressLine>WALTON ON THE HILL</streetAddressLine>
+												<streetAddressLine>TADWORTH</streetAddressLine>
+												<streetAddressLine/>
+												<postalCode>KT20 5BS</postalCode>
+												<addressKey>20169954</addressKey>
+												<useablePeriod>
+													<low value="20110325"/>
+												</useablePeriod>
+												<id root="2.16.840.1.113883.2.1.3.2.4.18.1" extension="go8y"/>
+											</addr>
+										</COCT_MT000201UK02.PartOfWhole>
+										<COCT_MT000203UK02.PartOfWhole classCode="PART">
+											<partPerson classCode="PSN" determinerCode="INSTANCE">
+												<name use="L">
+													<prefix>MR</prefix>
+													<given>Present</given>
+													<given/>
+													<family>Day</family>
+													<validTime>
+														<low value="20110325"/>
+													</validTime>
+													<id root="2.16.840.1.113883.2.1.3.2.4.18.1" extension="frle"/>
+												</name>
+											</partPerson>
+										</COCT_MT000203UK02.PartOfWhole>
+									</patientPerson>
+								</patientRole>
+							</subject>
+						</PDSResponse>
+					</subject>
+			<queryAck type="QueryAck">
+				<queryResponseCode code="OK"/>
+			</queryAck>
+		</ControlActEvent>
+	</QUPA_IN000009UK03>
+</retrievalQueryResponse>

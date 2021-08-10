@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUPC_IN160104UK05 xmlns="urn:hl7-org:v3">
+	<id root="DD79EED8-133D-4188-B91B-B9E8B82752AB" xmlns:doc="http://bt.xsl.doc"/>
+	<creationTime value="20140326091103" xmlns:doc="http://bt.xsl.doc"/>
+	<versionCode code="V3NPfIT2.0" xmlns:doc="http://bt.xsl.doc"/>
+	<interactionId root="2.16.840.1.113883.2.1.3.2.4.12" extension="QUPC_IN160104UK05" xmlns:doc="http://bt.xsl.doc"/>
+	<processingCode code="P" xmlns:doc="http://bt.xsl.doc"/>
+	<processingModeCode code="T" xmlns:doc="http://bt.xsl.doc"/>
+	<acceptAckCode code="NE" xmlns:doc="http://bt.xsl.doc"/>
+	<acknowledgement typeCode="AA" xmlns:doc="http://bt.xsl.doc">
+		<messageRef>
+			<id root="12FD1E43-8211-11E3-B8A4-00059A3C7800"/>
+		</messageRef>
+	</acknowledgement>
+	<communicationFunctionRcv typeCode="RCV" xmlns:doc="http://bt.xsl.doc">
+		<device classCode="DEV" determinerCode="INSTANCE">
+			<id root="1.2.826.0.1285.0.2.0.107" extension="276827251543"/>
+		</device>
+	</communicationFunctionRcv>
+	<communicationFunctionSnd typeCode="SND" xmlns:doc="http://bt.xsl.doc">
+		<device classCode="DEV" determinerCode="INSTANCE">
+			<id root="1.2.826.0.1285.0.2.0.107" extension="655159266510"/>
+		</device>
+	</communicationFunctionSnd>
+	<ControlActEvent classCode="CACT" moodCode="EVN" xmlns:doc="http://bt.xsl.doc">
+		<author1 typeCode="AUT">
+			<AgentSystemSDS classCode="AGNT">
+				<agentSystemSDS classCode="DEV" determinerCode="INSTANCE">
+					<id root="1.2.826.0.1285.0.2.0.107" extension="789816754038"/>
+				</agentSystemSDS>
+			</AgentSystemSDS>
+		</author1>
+		<subject typeCode="SUBJ">
+			<DocumentCollection classCode="OBS" moodCode="EVN" xmlns:npfitlc="NPFIT:HL7:Localisation" xmlns:security="xesos-ns:security" xmlns:eb="http://www.oasis-open.org/committees/ebxml-msg/schema/msg-header-2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nasp="http://spine.nhs.uk/spine-servicev1.0" xmlns:soap="http://www.w3.org/2001/12/soap-envelope" xmlns:hl7="urn:hl7-org:v3">
+				<code code="DCOL" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.177"/>
+				<component typeCode="COMP">
+					<pSISDocMetaData classCode="OBS" moodCode="EVN">
+						<availabilityTime value="20140109204730.003"/>
+						<code code="PDMD" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.177"/>
+						<effectiveTime value="20140109204730.003"/>
+						<id root="03EEFE2E-796C-11E3-B681-00059A3C7800"/>
+						<npfitlc:messageType root="2.16.840.1.113883.2.1.3.2.4.18.17" extension="REPC_MT150007UK05"/>
+						<component1 typeCode="COMP">
+							<documentState classCode="OBS" moodCode="EVN">
+								<code code="DCST" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.177"/>
+								<value code="1" displayName="Normal" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.59"/>
+							</documentState>
+						</component1>
+						<component14 typeCode="COMP">
+							<estDocSize classCode="OBS" moodCode="EVN">
+								<code code="ESTD" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.177"/>
+								<value value="10846"/>
+							</estDocSize>
+						</component14>
+						<component3 typeCode="COMP">
+							<documentMetaData classCode="DOCCLIN" moodCode="EVN">
+								<code code="196981000000101" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="General Practice Summary"/>
+								<effectiveTime value="20140109202443"/>
+								<title>General Practice Summary</title>
+								<author2 typeCode="AUT" contextControlCode="AP">
+									<documentAuthor classCode="AGNT">
+										<id root="1.2.826.0.1285.0.2.0.65" extension="100180579988"/>
+										<id root="1.2.826.0.1285.0.2.0.67" extension="100180580981"/>
+										<agentPlayingAuthor classCode="PSN" determinerCode="INSTANCE">
+											<name>Dr BARSTOW</name>
+										</agentPlayingAuthor>
+									</documentAuthor>
+								</author2>
+							</documentMetaData>
+						</component3>
+						<component5 typeCode="COMP">
+							<documentDQState classCode="OBS" moodCode="EVN">
+								<code code="DQST" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.177"/>
+								<value code="NORMAL" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.189"/>
+							</documentDQState>
+						</component5>
+						<component7 typeCode="COMP">
+							<GPSummary classCode="COMPOSITION" moodCode="EVN" xmlns:soapcsf="http://www.w3.org/2001/12/soap-envelope">
+								<id root="03EEFE2E-796C-11E3-B681-00059A3C7800"/>
+								<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="196981000000101" displayName="General Practice Summary"/>
+								<effectiveTime value="20140109202443"/>
+								<statusCode code="active"/>
+								<author typeCode="AUT" contextControlCode="OP">
+									<time value="20140109202443"/>
+									<UKCT_MT160018UK01.AgentPersonSDS classCode="AGNT">
+										<id root="1.2.826.0.1285.0.2.0.67" extension="100180580981"/>
+										<agentPersonSDS classCode="PSN" determinerCode="INSTANCE">
+											<id root="1.2.826.0.1285.0.2.0.65" extension="100180579988"/>
+											<name>Dr BARSTOW</name>
+										</agentPersonSDS>
+									</UKCT_MT160018UK01.AgentPersonSDS>
+								</author>
+								<excerptFrom typeCode="XCRPT" contextConductionInd="true" inversionInd="false" negationInd="false">
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAT_RM-NPfITUK10.excerptFrom"/>
+									<seperatableInd value="false"/>
+									<UKCT_MT144051UK01.CareProfessionalDocumentationCRE classCode="CATEGORY" moodCode="EVN">
+										<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="163171000000105" displayName="Care Professional Documentation"/>
+										<component typeCode="COMP" inversionInd="false" negationInd="false">
+											<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.component"/>
+											<seperatableInd value="false"/>
+											<presentationText classCode="OBS" moodCode="EVN">
+												<value mediaType="text/plain" xsi:type="ED.NPfIT.Text.XHTML">
+													<html xmlns="xhtml:NPfIT:PresentationText">
+														<head/>
+														<body>
+															<h2>General Practice Summary</h2>
+															<h3>Sourced from the patient's General Practice record. This information has not been verified by the practice prior to sending. This summary may not include all the information pertinent to this patient. NB the patient may have opted to leave out items from this summary</h3>
+															<h3>Time of summary creation 16.00 15-Mar-2007</h3>
+															<h3>Author Dr BARSTOW, EDEN SURGERY, CAVENDISH ROAD, ILKESTON, DERBYSHIRE, DE7 5AN</h3>
+															<h2>The practice holds no significant data on this patient</h2>
+															<h3>Date of sending this summary 15-Mar-2007</h3>
+														</body>
+													</html>
+												</value>
+												<id root="1348222c-796c-11e3-a543-00059a3c7800"/>
+												<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.126" code="PresentationText" displayName="Presentation Text"/>
+												<statusCode code="completed"/>
+												<effectiveTime value="200703151600"/>
+											</presentationText>
+										</component>
+									</UKCT_MT144051UK01.CareProfessionalDocumentationCRE>
+								</excerptFrom>
+								<pertinentInformation1 typeCode="PERT" contextConductionInd="true" inversionInd="false" negationInd="false">
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.pertinentInformation1"/>
+									<seperatableInd value="true"/>
+									<pertinentRootCREType classCode="CATEGORY" moodCode="EVN">
+										<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="163171000000105" displayName="Care Professional Documentation"/>
+									</pertinentRootCREType>
+								</pertinentInformation1>
+								<pertinentInformation2 typeCode="PERT" contextConductionInd="true" inversionInd="false" negationInd="false">
+									<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.pertinentInformation1"/>
+									<seperatableInd value="true"/>
+									<pertinentCREType classCode="CATEGORY" moodCode="EVN">
+										<code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="163131000000108" displayName="Clinical Observations and Findings"/>
+										<component typeCode="COMP" contextConductionInd="true">
+											<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.component"/>
+											<seperatableInd value="false"/>
+											<UKCT_MT144043UK02.Finding classCode="OBS" moodCode="EVN">
+												<value xsi:type="ST">zero</value>
+												<id root="135b348d-796c-11e3-a84c-00059a3c7800"/>
+												<code code="184229000" displayName="notes summary on computer"/>
+												<statusCode code="completed"/>
+												<effectiveTime value="20070315"/>
+											</UKCT_MT144043UK02.Finding>
+										</component>
+									</pertinentCREType>
+								</pertinentInformation2>
+								<recordTarget typeCode="RCT">
+									<patient classCode="PAT">
+										<id root="2.16.840.1.113883.2.1.4.1" extension="9449310645"/>
+									</patient>
+								</recordTarget>
+							</GPSummary>
+						</component7>
+					</pSISDocMetaData>
+				</component>
+				<component12 typeCode="COMP">
+					<careRecordState classCode="OBS" moodCode="EVN">
+						<code code="CRST" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.177"/>
+						<value code="NORMAL"/>
+					</careRecordState>
+				</component12>
+				<recordTarget typeCode="RCT">
+					<patient classCode="PAT">
+						<id root="2.16.840.1.113883.2.1.4.1" extension="9449310645"/>
+					</patient>
+				</recordTarget>
+			</DocumentCollection>
+		</subject>
+		<queryAck type="QueryAck">
+			<queryResponseCode code="OK"/>
+		</queryAck>
+	</ControlActEvent>
+</QUPC_IN160104UK05>

@@ -1,0 +1,67 @@
+# CPISClient Simulator rule definition file for ITK Testbench
+# Chris Berry 04/06/2015
+#
+BEGIN RESPONSES
+no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
+MCCI_IN010000UK13_sync_response TKW_ROOT/config/SPINE_MTH/simulator_config/CPIS_Templates/MCCI_IN010000UK13_sync_template.xml	200 urn:nhs:names:services:pds/MCCI_IN010000UK13
+QUPC_IN000006GB01_REPC_IN000007GB01_Successful_Response TKW_ROOT/config/SPINE_MTH/simulator_config/CPIS_Templates/REPC_IN000007GB01_sync_template1.xml 200 urn:nhs:names:services:cpisquery/REPC_IN000007GB01
+QUPC_IN000006GB01_QUQI_IN010000UK14_Response TKW_ROOT/config/SPINE_MTH/simulator_config/CPIS_Templates/QUPC_IN000006GB01_QUQI_IN010000UK14_sync_template.xml 200 urn:nhs:names:services:cpisquery/QUQI_IN010000UK14
+soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
+ebXML_error	TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+do_process	NONE	0
+END RESPONSES
+
+BEGIN SUBSTITUTIONS
+__MESSAGEID__	UUID
+__CREATION_TIME__ HL7datetime
+__ORIG_MESSAGEID__ Xpath /soap:Envelope/soap:Body/child::*/hl7:id/@root
+__SYNC_RCV_ASID__ Xpath /soap:Envelope/soap:Header/hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__SYNC_SND_ASID__ Xpath /soap:Envelope/soap:Header/hl7:communicationFunctionRcv/hl7:device/hl7:id/@extension
+__ASYNC_RCV_ASID__ Xpath //hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__JOBID__	UUID
+__SOAP_ERROR_FAULTCODE_REQUIRED__	Literal	soap:Client
+__SOAP_ERROR_FAULTSTRING_REQUIRED__	Literal	The service/interaction is not supported for the requested URI
+__SOAP_ERROR_CODECONTEXT__ Literal urn:nhs:names:errors:tms
+__SOAP_ERROR_ERRORCODE__ Literal 101
+__SOAP_ERROR_SEVERITY__ Literal Error
+__SOAP_ERROR_LOCATION__ Literal HTTP Header - SOAPAction
+__SOAP_ERROR_DESCRIPTION__ Literal The service/interaction is not supported for the requested URI
+__MSGID_UUID__ UUID
+__ACKNOWLEDGED_MESSAGEID_XPATH__ Xpath /*[1]/hl7:id/@root
+__ORIGINAL_SND_XPATH__ Xpath soap:Envelope/soap:Body//hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__SIAB_ASID_SYSTEMPROPERTY__ Property mth.my.asid
+__CREATION_TIMESTAMP__ HL7datetime
+__ERROR_VALUE_CODE_LITERAL__ Literal GE002
+__ERROR_VALUE_CODESYSTEM_LITERAL__ Literal 2.16.840.1.113883.2.1.3.2.4.17.42
+__ERROR_VALUE_DISPLAYTEXT_LITERAL__ Literal Unexpected business error encountered.
+__SOAP_MSG_ID_UUID__ UUID
+__SENDER_END_POINT_XPATH__ Xpath /soap:Envelope/soap:Header/wsa:From/wsa:Address
+__RECEIVER_END_POINT_XPATH__ Xpath /soap:Envelope/soap:Header/wsa:To
+__INBOUND_SOAP_MSGID_XPATH__ Xpath /soap:Envelope/soap:Header/wsa:MessageID
+__CREATION_TIMESTAMP__ HL7datetime
+__ORIGINAL_MSGID_XPATH__ Xpath /soap:Envelope/soap:Body//hl7:id/@root
+__ERROR_LIST_ID__ UUID
+__EB_VERSION__ Literal 2.0
+__ERRORLIST_HIGHEST_SEVERITY_REQUIRED__ Literal Error
+__ERROR_ID__ UUID
+__ERROR_ERRORCODE_REQUIRED__ Literal 402005
+__ERROR_SEVERITY_REQUIRED__ Literal Error
+__ERROR_DESCRIPTION__ Literal An error occurred while finding the defined contract
+__ERROR_CODECONTEXT__ Literal urn:oasis:names:tc:ebxml-msg:service:errors
+END SUBSTITUTIONS
+
+BEGIN EXPRESSIONS
+QUPC_IN000006GB01_REPC_IN000007GB01_Successful_Rule XpathEquals /soap:Envelope/soap:Body/hl7:QUPC_IN000006GB01/hl7:ControlActEvent/hl7:CP-ISQueryStub/hl7:cP-ISNHSQuery/hl7:queryByParameter/hl7:person.NHSnumber/hl7:value/@extension 9449310394
+QUPC_IN000006GB01_QUQI_IN010000UK14_Rule XpathEquals /soap:Envelope/soap:Body/hl7:QUPC_IN000006GB01/hl7:ControlActEvent/hl7:subject/hl7:CP-ISQueryStub/hl7:cP-ISNHSQuery/hl7:queryByParameter/hl7:person.NHSnumber/hl7:value/@extension 9448904053
+QUPC_IN000006GB01_SOAPFault_Rule XpathEquals /soap:Envelope/soap:Body/hl7:QUPC_IN000006GB01/hl7:ControlActEvent/hl7:subject/hl7:CP-ISQueryStub/hl7:cP-ISNHSQuery/hl7:queryByParameter/hl7:person.NHSnumber/hl7:value/@extension 9444459993
+QUPC_IN000006GB01_MCCI_IN010000UK13_Rule XpathEquals /soap:Envelope/soap:Body/hl7:QUPC_IN000006GB01/hl7:ControlActEvent/hl7:subject/hl7:CP-ISQueryStub/hl7:cP-ISNHSQuery/hl7:queryByParameter/hl7:person.NHSnumber/hl7:value/@extension 9346424613
+passthrough	Always
+END EXPRESSIONS
+
+BEGIN RULE
+urn:nhs:names:services:cpisquery/QUPC_IN000006GB01
+if QUPC_IN000006GB01_REPC_IN000007GB01_Successful_Rule then QUPC_IN000006GB01_REPC_IN000007GB01_Successful_Response else next
+if QUPC_IN000006GB01_SOAPFault_Rule then soap_fault else next
+if QUPC_IN000006GB01_MCCI_IN010000UK13_Rule then MCCI_IN010000UK13_sync_response else next
+if QUPC_IN000006GB01_QUQI_IN010000UK14_Rule then QUPC_IN000006GB01_QUQI_IN010000UK14_Response
+END RULE

@@ -1,0 +1,330 @@
+# GPES Simulator rule definition file for ITK Testbench
+# Richard Robinson, 19th February 2013
+#
+BEGIN RESPONSES
+no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
+TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+01TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/01MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+02TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/02MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+03TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/03MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+04TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/04MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+05TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/05MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+06TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/06MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+07TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/07MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+08TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/08MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+09TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/09MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+10TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/10MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+11TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/11MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+12TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/12MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+13TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/13MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+14TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/14MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+15TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/15MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+16TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/16MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+17TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/17MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+18TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/18MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+19TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/19MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+20TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/20MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+21TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/21MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+22TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/22MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+23TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/23MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+24TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/24MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+25TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/25MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+26TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/26MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+27TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/27MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+28TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/28MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+29TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/29MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+30TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/30MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+31TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/31MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+32TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/32MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+33TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/33MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+34TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/34MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+35TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/35MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+36TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/36MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+37TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/37MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+38TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/38MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+39TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/39MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+40TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/40MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+41TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/41MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+42TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/42MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+43TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/43MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+44TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/44MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+45TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/45MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+46TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/46MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+47TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/47MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+48TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/48MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500	
+ebXML_error	TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+do_process	NONE	0
+END RESPONSES
+
+BEGIN SUBSTITUTIONS
+__MESSAGEID__	UUID
+__CREATION_TIME__ HL7datetime
+__ORIG_MESSAGEID__ Xpath /soap:Envelope/soap:Body/child::*/hl7:id/@root
+__SYNC_RCV_ASID__ Xpath /soap:Envelope/soap:Header/hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__SYNC_SND_ASID__ Xpath /soap:Envelope/soap:Header/hl7:communicationFunctionRcv/hl7:device/hl7:id/@extension
+__ASYNC_RCV_ASID__ Xpath //hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__JOBID__	UUID
+__SOAP_ERROR_FAULTCODE_REQUIRED__	Literal	soap:Client
+__SOAP_ERROR_FAULTSTRING_REQUIRED__	Literal	The service/interaction is not supported for the requested URI
+__SOAP_ERROR_CODECONTEXT__ Literal urn:nhs:names:errors:tms
+__SOAP_ERROR_ERRORCODE__ Literal 101
+__SOAP_ERROR_SEVERITY__ Literal Error
+__SOAP_ERROR_LOCATION__ Literal HTTP Header - SOAPAction
+__SOAP_ERROR_DESCRIPTION__ Literal The service/interaction is not supported for the requested URI
+__MSGID_UUID__ UUID
+__ACKNOWLEDGED_MESSAGEID_XPATH__ Xpath /*[1]/hl7:id/@root
+__ORIGINAL_SND_XPATH__ Xpath soap:Envelope/soap:Body//hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension
+__SIAB_ASID_SYSTEMPROPERTY__ Property mth.my.asid
+__CREATION_TIMESTAMP__ HL7datetime
+__ERROR_VALUE_CODE_LITERAL__ Literal GE002
+__ERROR_VALUE_CODESYSTEM_LITERAL__ Literal 2.16.840.1.113883.2.1.3.2.4.17.42
+__ERROR_VALUE_DISPLAYTEXT_LITERAL__ Literal Unexpected business error encountered.
+__ERROR_VALUE_CODE_LITERAL01__ Literal 202	
+__ERROR_VALUE_DISPLAYTEXT_LITERAL01__ Literal	HL7 Validation Error
+__ERROR_VALUE_CODE_LITERAL02__ Literal 501
+__ERROR_VALUE_DISPLAYTEXT_LITERAL02__ Literal	hl7:{interactionId}/hl7:id/@root is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL03__ Literal 502
+__ERROR_VALUE_DISPLAYTEXT_LITERAL03__ Literal	hl7:{interactionId}/hl7:creationTime/@value is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL04__ Literal 503
+__ERROR_VALUE_DISPLAYTEXT_LITERAL04__ Literal	hl7:{interactionId}/hl7:versionCode/@code is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL05__ Literal 504
+__ERROR_VALUE_DISPLAYTEXT_LITERAL05__ Literal	hl7:{interactionId}/hl7:ControlAct is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL06__ Literal 505
+__ERROR_VALUE_DISPLAYTEXT_LITERAL06__ Literal	hl7:{interactionId}/hl7:interactionId[@root='2.16.840.1.113883.2.1.3.2.4.12']/@extension is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL07__ Literal 506
+__ERROR_VALUE_DISPLAYTEXT_LITERAL07__ Literal	hl7:{interactionId}/hl7:communicationFunctionRcv/hl7:device/hl7:id/@extension is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL08__ Literal 507
+__ERROR_VALUE_DISPLAYTEXT_LITERAL08__ Literal	hl7:{interactionId}/hl7:communicationFunctionSnd/hl7:device/hl7:id/@extension is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL09__ Literal 508
+__ERROR_VALUE_DISPLAYTEXT_LITERAL09__ Literal	hl7:{interactionId}/hl7:ControlActEvent/hl7:author is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL10__ Literal 509
+__ERROR_VALUE_DISPLAYTEXT_LITERAL10__ Literal	hl7:{interactionId}/hl7:ControlActEvent/hl7:author1 has cardinality [1..2] - minOccurs=1, maxOccurs=2
+__ERROR_VALUE_CODE_LITERAL11__ Literal 510
+__ERROR_VALUE_DISPLAYTEXT_LITERAL11__ Literal	hl7:{interactionId}/hl7:ControlActEvent/hl7:author1/hl7:AgentSystemSDS/hl7:agentSystemSDS/hl7:id[@root='1.2.826.0.1285.0.2.0.107'] is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL12__ Literal 511
+__ERROR_VALUE_DISPLAYTEXT_LITERAL12__ Literal	If present hl7:{interactionId}/hl7:ControlActEvent/hl7:author1[2]/hl7:AgentSystemSDS/hl7:agentSystemSDS/hl7:id is empty or invalid
+__ERROR_VALUE_CODE_LITERAL13__ Literal 512
+__ERROR_VALUE_DISPLAYTEXT_LITERAL13__ Literal	hl7:{interactionId}/hl7:ControlActEvent/hl7:query is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL14__ Literal 513
+__ERROR_VALUE_DISPLAYTEXT_LITERAL14__ Literal	hl7:{interactionId}/hl7:ControlActEvent[1]/hl7:query or hl7:{interactionId}/hl7:ControlActEvent[1]/hl7:subject is missing or empty
+__ERROR_VALUE_CODE_LITERAL15__ Literal 514
+__ERROR_VALUE_DISPLAYTEXT_LITERAL15__ Literal	hl7:{interactionId}/hl7:ControlActEvent is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL16__ Literal 515
+__ERROR_VALUE_DISPLAYTEXT_LITERAL16__ Literal	hl7:{interactionId} is not [1..1], or is inconsistent with the SOAP:Header, or is inconsistent with the HL7 wrapper element name
+__ERROR_VALUE_CODE_LITERAL17__ Literal 516
+__ERROR_VALUE_DISPLAYTEXT_LITERAL17__ Literal	hl7:{interactionId}/hl7:id element is not [1..1], or is inconsistent with the SOAP:Header
+__ERROR_VALUE_CODE_LITERAL18__ Literal 517
+__ERROR_VALUE_DISPLAYTEXT_LITERAL18__ Literal	hl7:{interactionId}/hl7:creationTime element is not [1..1] or is empty
+__ERROR_VALUE_CODE_LITERAL19__ Literal 518
+__ERROR_VALUE_DISPLAYTEXT_LITERAL19__ Literal	hl7:{interactionId}/hl7:versionCode is not [1..1] or is empty
+__ERROR_VALUE_CODE_LITERAL20__ Literal 519
+__ERROR_VALUE_DISPLAYTEXT_LITERAL20__ Literal	hl7:{interactionId}/hl7:communicationFunctionRcv/hl7:device/hl7:id[@root='2.16.840.1.113883.2.1.3.2.4.10'] is not [1..1], or is inconsistent with the SOAP:Header
+__ERROR_VALUE_CODE_LITERAL21__ Literal 520
+__ERROR_VALUE_DISPLAYTEXT_LITERAL21__ Literal	hl7:{interactionId}/hl7:communicationFunctionSnd/hl7:device/hl7:id[@root='2.16.840.1.113883.2.1.3.2.4.10'] is not [1..1], or is inconsistent with the SOAP:Header
+__ERROR_VALUE_CODE_LITERAL22__ Literal 521
+__ERROR_VALUE_DISPLAYTEXT_LITERAL22__ Literal	hl7:{interactionId}/hl7:ControlActProcess/hl7:pdsTraceQuery is not [1..1], or is empty
+__ERROR_VALUE_CODE_LITERAL23__ Literal 522
+__ERROR_VALUE_DISPLAYTEXT_LITERAL23__ Literal	hl7:{interactionId}/hl7:ControlActProcess/hl7:pdsRetrievalQuery is not [1..1], or is empty
+__ERROR_VALUE_CODE_LITERAL24__ Literal 523
+__ERROR_VALUE_DISPLAYTEXT_LITERAL24__ Literal	hl7:{interactionId}/hl7:ControlActProcess/hl7:pdsConfirmNHSNumberQuery is not [1..1], or is empty
+__ERROR_VALUE_CODE_LITERAL25__ Literal 524
+__ERROR_VALUE_DISPLAYTEXT_LITERAL25__ Literal	hl7:{interactionId}/hl7:ControlActRequest/hl7:lRConfirmationRequest is not [1..1], or is empty
+__ERROR_VALUE_CODE_LITERAL26__ Literal 525
+__ERROR_VALUE_DISPLAYTEXT_LITERAL26__ Literal	No batch items to process
+__ERROR_VALUE_CODE_LITERAL27__ Literal 526
+__ERROR_VALUE_DISPLAYTEXT_LITERAL27__ Literal	Number of HL7 Batch items declared in manifest and payload is inconsistent
+__ERROR_VALUE_CODE_LITERAL28__ Literal 527
+__ERROR_VALUE_DISPLAYTEXT_LITERAL28__ Literal	HL7 Batch sequence number is invalid
+__ERROR_VALUE_CODE_LITERAL29__ Literal 528
+__ERROR_VALUE_DISPLAYTEXT_LITERAL29__ Literal	HL7 Batch contains duplicate message Ids
+__ERROR_VALUE_CODE_LITERAL30__ Literal 529
+__ERROR_VALUE_DISPLAYTEXT_LITERAL30__ Literal	MessageIds/Interactions declared in the manifest do not agree with the batchItems
+__ERROR_VALUE_CODE_LITERAL31__ Literal 530
+__ERROR_VALUE_DISPLAYTEXT_LITERAL31__ Literal	Access Control Violation for HL7 batch item(s)
+__ERROR_VALUE_CODE_LITERAL32__ Literal 531
+__ERROR_VALUE_DISPLAYTEXT_LITERAL32__ Literal	hl7:manifestItem/hl7:payloadId/@root is empty
+__ERROR_VALUE_CODE_LITERAL33__ Literal 532
+__ERROR_VALUE_DISPLAYTEXT_LITERAL33__ Literal	npfit:batchControlActItem/@messageId is empty
+__ERROR_VALUE_CODE_LITERAL34__ Literal 533
+__ERROR_VALUE_DISPLAYTEXT_LITERAL34__ Literal	Interactions declared in the manifest do not agree with the batchItems
+__ERROR_VALUE_CODE_LITERAL35__ Literal 534
+__ERROR_VALUE_DISPLAYTEXT_LITERAL35__ Literal	Batch contains at least one non-batchable interaction
+__ERROR_VALUE_CODE_LITERAL36__ Literal 506
+__ERROR_VALUE_DISPLAYTEXT_LITERAL36__ Literal	hl7:{interactionId}/hl7:communicationFunctionRcv/[@root='1.2.826.0.1285.0.2.0.107']/@extension is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL37__ Literal 507
+__ERROR_VALUE_DISPLAYTEXT_LITERAL37__ Literal	hl7:{interactionId}/hl7:communicationFunctionSnd/[@root='1.2.826.0.1285.0.2.0.107']/@extension is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL38__ Literal 506
+__ERROR_VALUE_DISPLAYTEXT_LITERAL38__ Literal	hl7:{interactionId}/hl7:communicationFunctionRcv/[@root='2.16.840.1.113883.2.1.3.2.4.10']/@extension is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL39__ Literal 507
+__ERROR_VALUE_DISPLAYTEXT_LITERAL39__ Literal	hl7:{interactionId}/hl7:communicationFunctionSnd/[@root='2.16.840.1.113883.2.1.3.2.4.10']/@extension is missing, empty or invalid
+__ERROR_VALUE_CODE_LITERAL40__ Literal 535
+__ERROR_VALUE_DISPLAYTEXT_LITERAL40__ Literal	Batch Item Processing Failed : The message is not well formed
+__ERROR_VALUE_CODE_LITERAL41__ Literal 535
+__ERROR_VALUE_DISPLAYTEXT_LITERAL41__ Literal	Batch Item Processing Failed : Schema validation failed
+__ERROR_VALUE_CODE_LITERAL42__ Literal 535
+__ERROR_VALUE_DISPLAYTEXT_LITERAL42__ Literal	Batch Item Processing Failed : Delivery/Routing Failure
+__ERROR_VALUE_CODE_LITERAL43__ Literal 535
+__ERROR_VALUE_DISPLAYTEXT_LITERAL43__ Literal	Batch Item Processing Failed : Required Transformation Resource not found
+__ERROR_VALUE_CODE_LITERAL44__ Literal 535
+__ERROR_VALUE_DISPLAYTEXT_LITERAL44__ Literal	Batch Item Processing Failed
+__ERROR_VALUE_CODE_LITERAL45__ Literal 900	
+__ERROR_VALUE_DISPLAYTEXT_LITERAL45__ Literal	Access Control Violation
+__ERROR_VALUE_CODE_LITERAL46__ Literal 1000	
+__ERROR_VALUE_DISPLAYTEXT_LITERAL46__ Literal	Unknown routing failure
+__ERROR_VALUE_CODE_LITERAL47__ Literal MVI001	
+__ERROR_VALUE_DISPLAYTEXT_LITERAL47__ Literal	A script could not be found for the requested transformation
+__ERROR_VALUE_CODESYSTEM_LITERAL47__ Literal urn:nhs:names:errors:mvi
+__ERROR_VALUE_CODE_LITERAL48__ Literal SEF001	
+__ERROR_VALUE_DISPLAYTEXT_LITERAL48__ Literal	This message transfer is not permitted, for clinical safety reasons.
+__SOAP_MSG_ID_UUID__ UUID
+__SENDER_END_POINT_XPATH__ Xpath /soap:Envelope/soap:Header/wsa:From/wsa:Address
+__RECEIVER_END_POINT_XPATH__ Xpath /soap:Envelope/soap:Header/wsa:To
+__INBOUND_SOAP_MSGID_XPATH__ Xpath /soap:Envelope/soap:Header/wsa:MessageID
+__CREATION_TIMESTAMP__ HL7datetime
+__ORIGINAL_MSGID_XPATH__ Xpath /soap:Envelope/soap:Body//hl7:id/@root
+__ERROR_LIST_ID__ UUID
+__EB_VERSION__ Literal 2.0
+__ERRORLIST_HIGHEST_SEVERITY_REQUIRED__ Literal Error
+__ERROR_ID__ UUID
+__ERROR_ERRORCODE_REQUIRED__ Literal 402005
+__ERROR_SEVERITY_REQUIRED__ Literal Error
+__ERROR_DESCRIPTION__ Literal An error occurred while finding the defined contract
+__ERROR_CODECONTEXT__ Literal urn:oasis:names:tc:ebxml-msg:service:errors
+END SUBSTITUTIONS
+
+BEGIN EXPRESSIONS
+COMT_IN000002GB01_TMS_NoEbxmlAck_010301_Rule 	XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-E-Q-RTPR/hl7:value/gpes:GPES-E-Q-RTPR-Message/gpes:Run-Time-Parameters-Response/gpes:Scheduled-Query-Instance-ID A11111-000000000001-R
+COMT_IN000002GB01_TMS_EbxmlAck_010303_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-E-Q-RTPR/hl7:value/gpes:GPES-E-Q-RTPR-Message/gpes:Run-Time-Parameters-Response/gpes:Scheduled-Query-Instance-ID A33333-000000000001-R
+COMT_IN000002GB01_TMS_NACK_010306_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-E-Q-RTPR/hl7:value/gpes:GPES-E-Q-RTPR-Message/gpes:Run-Time-Parameters-Response/gpes:Scheduled-Query-Instance-ID A66666-000000000001-R
+COMT_IN000002GB01_TMS_SOAPFault_010307_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-E-Q-RTPR/hl7:value/gpes:GPES-E-Q-RTPR-Message/gpes:Run-Time-Parameters-Response/gpes:Scheduled-Query-Instance-ID A77777-000000000001-R
+COMT_IN000004GB01_TMS_ebXMLError_010302_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-E-Q-NT/hl7:value/gpes:GPES-E-Q-NT_Message/gpes:E-Q-Notification/gpes:Scheduled-Query-Identifier-ID A22222-000000000001-R
+COMT_IN000001GB01_TMS_NoEbxmlAck_010201_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-RTP/hl7:value/gpes:GPES-Q-E-RTP-Message/gpes:Run-Time-Parameters/gpes:Scheduled-Query-Instance-ID A11111-000000000001-R
+COMT_IN000001GB01_TMS_EbxmlAck_010203_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-RTP/hl7:value/gpes:GPES-Q-E-RTP-Message/gpes:Run-Time-Parameters/gpes:Scheduled-Query-Instance-ID A33333-000000000001-R
+COMT_IN000001GB01_TMS_NACK_010206_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-RTP/hl7:value/gpes:GPES-Q-E-RTP-Message/gpes:Run-Time-Parameters/gpes:Scheduled-Query-Instance-ID A66666-000000000001-R
+COMT_IN000001GB01_TMS_SOAPFault_010207_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-RTP/hl7:value/gpes:GPES-Q-E-RTP-Message/gpes:Run-Time-Parameters/gpes:Scheduled-Query-Instance-ID A77777-000000000001-R
+COMT_IN000003GB01_TMS_ebXMLError_010202_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A22222-000000000001-R
+COMT_IN000003GB01_TMS_ebXMLError_01_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000001-R
+COMT_IN000003GB01_TMS_ebXMLError_02_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000002-R
+COMT_IN000003GB01_TMS_ebXMLError_03_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000003-R
+COMT_IN000003GB01_TMS_ebXMLError_04_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000004-R
+COMT_IN000003GB01_TMS_ebXMLError_05_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000005-R
+COMT_IN000003GB01_TMS_ebXMLError_06_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000006-R
+COMT_IN000003GB01_TMS_ebXMLError_07_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000007-R
+COMT_IN000003GB01_TMS_ebXMLError_08_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000008-R
+COMT_IN000003GB01_TMS_ebXMLError_09_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000009-R
+COMT_IN000003GB01_TMS_ebXMLError_10_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000010-R
+COMT_IN000003GB01_TMS_ebXMLError_11_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000011-R
+COMT_IN000003GB01_TMS_ebXMLError_12_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000012-R
+COMT_IN000003GB01_TMS_ebXMLError_13_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000013-R
+COMT_IN000003GB01_TMS_ebXMLError_14_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000014-R
+COMT_IN000003GB01_TMS_ebXMLError_15_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000015-R
+COMT_IN000003GB01_TMS_ebXMLError_16_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000016-R
+COMT_IN000003GB01_TMS_ebXMLError_17_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000017-R
+COMT_IN000003GB01_TMS_ebXMLError_18_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000018-R
+COMT_IN000003GB01_TMS_ebXMLError_19_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000019-R
+COMT_IN000003GB01_TMS_ebXMLError_20_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000020-R
+COMT_IN000003GB01_TMS_ebXMLError_21_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000021-R
+COMT_IN000003GB01_TMS_ebXMLError_22_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000022-R
+COMT_IN000003GB01_TMS_ebXMLError_23_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000023-R
+COMT_IN000003GB01_TMS_ebXMLError_24_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000024-R
+COMT_IN000003GB01_TMS_ebXMLError_25_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000025-R
+COMT_IN000003GB01_TMS_ebXMLError_26_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000026-R
+COMT_IN000003GB01_TMS_ebXMLError_27_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000027-R
+COMT_IN000003GB01_TMS_ebXMLError_28_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000028-R
+COMT_IN000003GB01_TMS_ebXMLError_29_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000029-R
+COMT_IN000003GB01_TMS_ebXMLError_30_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000030-R
+COMT_IN000003GB01_TMS_ebXMLError_31_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000031-R
+COMT_IN000003GB01_TMS_ebXMLError_32_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000032-R
+COMT_IN000003GB01_TMS_ebXMLError_33_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000033-R
+COMT_IN000003GB01_TMS_ebXMLError_34_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000034-R
+COMT_IN000003GB01_TMS_ebXMLError_35_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000035-R
+COMT_IN000003GB01_TMS_ebXMLError_36_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000036-R
+COMT_IN000003GB01_TMS_ebXMLError_37_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000037-R
+COMT_IN000003GB01_TMS_ebXMLError_38_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000038-R
+COMT_IN000003GB01_TMS_ebXMLError_39_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000039-R
+COMT_IN000003GB01_TMS_ebXMLError_40_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000040-R
+COMT_IN000003GB01_TMS_ebXMLError_41_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000041-R
+COMT_IN000003GB01_TMS_ebXMLError_42_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000042-R
+COMT_IN000003GB01_TMS_ebXMLError_43_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000043-R
+COMT_IN000003GB01_TMS_ebXMLError_44_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000044-R
+COMT_IN000003GB01_TMS_ebXMLError_45_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000045-R
+COMT_IN000003GB01_TMS_ebXMLError_46_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000046-R
+COMT_IN000003GB01_TMS_ebXMLError_47_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000047-R
+COMT_IN000003GB01_TMS_ebXMLError_48_Rule XpathEquals /*[1]/hl7:ControlActEvent/hl7:subject/hl7:GPES-Q-E-NT/hl7:value/gpes:GPES-Q-E-NT_Message/gpes:Q-E-Notification/gpes:Stage1-Notification/gpes:Scheduled-Query-Identifier-ID A00000-000000000048-R
+passthrough	Always
+END EXPRESSIONS
+
+BEGIN RULE
+urn:nhs:names:services:gpes/COMT_IN000002GB01
+if COMT_IN000002GB01_TMS_NoEbxmlAck_010301_Rule then no_ebXMLack_response else next
+if COMT_IN000002GB01_TMS_EbxmlAck_010303_Rule then no_ebXMLack_response else next
+if COMT_IN000002GB01_TMS_NACK_010306_Rule then TMS_NACK_Response else next
+if COMT_IN000002GB01_TMS_SOAPFault_010307_Rule then soap_fault
+END RULE
+
+BEGIN RULE
+urn:nhs:names:services:gpes/COMT_IN000004GB01
+if COMT_IN000004GB01_TMS_ebXMLError_010302_Rule then ebXML_error
+END RULE
+
+BEGIN RULE
+urn:nhs:names:services:gpes/COMT_IN000001GB01
+if COMT_IN000001GB01_TMS_NoEbxmlAck_010201_Rule then no_ebXMLack_response else next
+if COMT_IN000001GB01_TMS_EbxmlAck_010203_Rule then no_ebXMLack_response else next
+if COMT_IN000001GB01_TMS_NACK_010206_Rule then TMS_NACK_Response else next
+if COMT_IN000001GB01_TMS_SOAPFault_010207_Rule then soap_fault
+END RULE
+
+BEGIN RULE
+urn:nhs:names:services:gpes/COMT_IN000003GB01
+if COMT_IN000003GB01_TMS_ebXMLError_010202_Rule then ebXML_error else next
+if COMT_IN000003GB01_TMS_ebXMLError_01_Rule then 01TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_02_Rule then 02TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_03_Rule then 03TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_04_Rule then 04TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_05_Rule then 05TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_06_Rule then 06TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_07_Rule then 07TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_08_Rule then 08TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_09_Rule then 09TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_10_Rule then 10TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_11_Rule then 11TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_12_Rule then 12TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_13_Rule then 13TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_14_Rule then 14TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_15_Rule then 15TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_16_Rule then 16TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_17_Rule then 17TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_18_Rule then 18TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_19_Rule then 19TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_20_Rule then 20TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_21_Rule then 21TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_22_Rule then 22TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_23_Rule then 23TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_24_Rule then 24TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_25_Rule then 25TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_26_Rule then 26TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_27_Rule then 27TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_28_Rule then 28TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_29_Rule then 29TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_30_Rule then 30TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_31_Rule then 31TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_32_Rule then 32TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_33_Rule then 33TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_34_Rule then 34TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_35_Rule then 35TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_36_Rule then 36TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_37_Rule then 37TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_38_Rule then 38TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_39_Rule then 39TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_40_Rule then 40TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_41_Rule then 41TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_42_Rule then 42TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_43_Rule then 43TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_44_Rule then 44TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_45_Rule then 45TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_46_Rule then 46TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_47_Rule then 47TMS_NACK_Response else next
+if COMT_IN000003GB01_TMS_ebXMLError_48_Rule then 48TMS_NACK_Response
+END RULE

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hl7:PORX_IN050101UK31 xmlns:hl7="urn:hl7-org:v3">
+	<hl7:id root="__MSGID_UUID__"/>
+	<hl7:creationTime value="__CREATION_TIMESTAMP__"/>
+	<hl7:versionCode code="V3NPfIT3.0"/>
+	<hl7:interactionId root="2.16.840.1.113883.2.1.3.2.4.12" extension="PORX_IN050101UK31"/>
+	<hl7:processingCode code="P"/>
+	<hl7:processingModeCode code="T"/>
+	<hl7:acceptAckCode code="NE"/>
+	<hl7:acknowledgement typeCode="AA">
+		<hl7:messageRef>
+			<hl7:id root="__ORIGINAL_MSGID_XPATH__"/>
+		</hl7:messageRef>
+	</hl7:acknowledgement>
+	<hl7:communicationFunctionRcv typeCode="RCV">
+		<hl7:device classCode="DEV" determinerCode="INSTANCE">
+			<hl7:id root="1.2.826.0.1285.0.2.0.107" extension="__ORIGINAL_SND_XPATH__"/>
+		</hl7:device>
+	</hl7:communicationFunctionRcv>
+	<hl7:communicationFunctionSnd typeCode="SND">
+		<hl7:device classCode="DEV" determinerCode="INSTANCE">
+			<hl7:id root="1.2.826.0.1285.0.2.0.107" extension="__SIAB_ASID_SYSTEMPROPERTY__"/>
+		</hl7:device>
+	</hl7:communicationFunctionSnd>
+	<hl7:ControlActEvent classCode="CACT" moodCode="EVN">
+		<hl7:author1 typeCode="AUT">
+			<hl7:AgentSystemSDS classCode="AGNT">
+				<hl7:agentSystemSDS classCode="DEV" determinerCode="INSTANCE">
+					<hl7:id root="1.2.826.0.1285.0.2.0.107" extension="ETP"/>
+				</hl7:agentSystemSDS>
+			</hl7:AgentSystemSDS>
+		</hl7:author1>
+		<hl7:subject typeCode="SUBJ" contextConductionInd="false">
+			<CancellationResponse classCode="INFRM" moodCode="EVN" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppdbatch="http://spine.nhs.uk/spine-service-ppd" xmlns:fn="http://www.w3.org/2005/02/xpath-functions" xmlns:eb="http://www.oasis-open.org/committees/ebxml-msg/schema/msg-header-2_0.xsd" xmlns:soapcsf="http://www.w3.org/2001/12/soap-envelope" xmlns="urn:hl7-org:v3" xmlns:nasp="http://spine.nhs.uk/spine-servicev1.0" xmlns:soap="http://www.w3.org/2001/12/soap-envelope">
+				<id root="__PAYLOAD_UUID__"/>
+				<effectiveTime value="20100323130750"/>
+				<recordTarget typeCode="RCT">
+					<Patient classCode="PAT">
+						<id root="2.16.840.1.113883.2.1.4.1" extension="__NHSNO_XPATH__"/>
+						<addr use="H">
+							<streetAddressLine>31 Beechwood Grove</streetAddressLine>
+							<streetAddressLine>Pencoed</streetAddressLine>
+							<streetAddressLine>Mid Glamorgan</streetAddressLine>
+							<streetAddressLine>Bridgend</streetAddressLine>
+							<postalCode>CF35 6SU</postalCode>
+						</addr>
+						<telecom use="HP" value="tel:01133901835"/>
+						<patientPerson classCode="PSN" determinerCode="INSTANCE">
+							<name>
+								<prefix>Miss</prefix>
+								<given>Samantha</given>
+								<given>E</given>
+								<family>Khan</family>
+							</name>
+							<administrativeGenderCode code="2" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25"/>
+							<birthTime value="19910509"/>
+							<playedProviderPatient classCode="PAT">
+								<subjectOf typeCode="SBJ">
+									<patientCareProvision classCode="PCPR" moodCode="EVN">
+										<code code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.37"/>
+										<responsibleParty typeCode="RESP">
+											<healthCareProvider classCode="PROV">
+												<id extension="B81055" root="1.2.826.0.1285.0.1.10"/>
+											</healthCareProvider>
+										</responsibleParty>
+									</patientCareProvision>
+								</subjectOf>
+							</playedProviderPatient>
+						</patientPerson>
+					</Patient>
+				</recordTarget>
+				<performer typeCode="PRF" contextControlCode="OP">
+					<time value="20100323120908"/>
+					<AgentPerson classCode="AGNT">
+						<id root="1.2.826.0.1285.0.2.0.67" extension="100243444980"/>
+						<code codeSystem="1.2.826.0.1285.0.2.1.104" code="R1290"/>
+						<telecom use="WP" value="tel:01208812760"/>
+						<agentPerson classCode="PSN" determinerCode="INSTANCE">
+							<id root="1.2.826.0.1285.0.2.0.65" extension="85677"/>
+							<name use="L">WELSH</name>
+						</agentPerson>
+						<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+							<id root="1.2.826.0.1285.0.1.10" extension="FH878"/>
+							<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94" code="003"/>
+							<name>BOOTS THE CHEMISTS LTD</name>
+							<telecom use="WP" value="tel:01208812760"/>
+							<addr use="WP">
+								<streetAddressLine>REGENCY ARCADE</streetAddressLine>
+								<streetAddressLine>23 MOLESWORTH STREET</streetAddressLine>
+								<streetAddressLine>WADEBRIDGE</streetAddressLine>
+								<streetAddressLine>CORNWALL</streetAddressLine>
+								<postalCode>PL27 7DH</postalCode>
+							</addr>
+						</representedOrganization>
+					</AgentPerson>
+				</performer>
+				<author typeCode="AUT">
+					<AgentPerson classCode="AGNT" type="RoleHeir">
+						<id extension="204788727012" root="1.2.826.0.1285.0.2.0.67"/>
+						<code code="S8000:G8000:R8000" codeSystem="1.2.826.0.1285.0.2.1.104"/>
+						<telecom use="WP" value="tel:0120873172"/>
+						<agentPerson classCode="PSN" determinerCode="INSTANCE" type="Person">
+							<id extension="6273636" root="1.2.826.0.1285.0.2.1.54"/>
+							<name>
+								<prefix>Mr</prefix>
+								<given>Ian</given>
+								<family>Ink</family>
+							</name>
+						</agentPerson>
+						<representedOrganization classCode="ORG" determinerCode="INSTANCE" type="Organization">
+							<id extension="B81055" root="1.2.826.0.1285.0.1.10"/>
+							<code code="001" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94"/>
+							<name>Dr Porter &amp; Partners</name>
+							<telecom use="WP" value="tel:0120873172"/>
+							<addr use="WP">
+								<streetAddressLine>Technology House</streetAddressLine>
+								<streetAddressLine>18 Normandy Way</streetAddressLine>
+								<streetAddressLine>Walker Lines Industrial Estate</streetAddressLine>
+								<streetAddressLine>Bodmin</streetAddressLine>
+								<postalCode>PL31 1EX</postalCode>
+							</addr>
+							<healthCareProviderLicense classCode="PROV">
+								<Organization classCode="ORG" determinerCode="INSTANCE">
+									<id extension="5FPCT" root="1.2.826.0.1285.0.1.10"/>
+									<code code="005" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94"/>
+									<name>Fowey Primary Care Team</name>
+								</Organization>
+							</healthCareProviderLicense>
+						</representedOrganization>
+					</AgentPerson>
+				</author>
+				<responsibleParty type="Participation" typeCode="RESP">
+					<AgentPerson classCode="AGNT" type="RoleHeir">
+						<id extension="204788727012" root="1.2.826.0.1285.0.2.0.67"/>
+						<code code="S8000:G8000:R8000" codeSystem="1.2.826.0.1285.0.2.1.104"/>
+						<telecom use="WP" value="tel:0120873172"/>
+						<agentPerson classCode="PSN" determinerCode="INSTANCE" type="Person">
+							<id extension="G1726363" root="1.2.826.0.1285.0.2.1.54"/>
+							<name>
+								<prefix>Mr</prefix>
+								<given>Ian</given>
+								<family>Ink</family>
+							</name>
+						</agentPerson>
+						<representedOrganization classCode="ORG" determinerCode="INSTANCE" type="Organization">
+							<id extension="B81055" root="1.2.826.0.1285.0.1.10"/>
+							<code code="001" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94"/>
+							<name>Dr Porter &amp; Partners</name>
+							<telecom use="WP" value="tel:0120873172"/>
+							<addr use="WP">
+								<streetAddressLine>Technology House</streetAddressLine>
+								<streetAddressLine>18 Normandy Way</streetAddressLine>
+								<streetAddressLine>Walker Lines Industrial Estate</streetAddressLine>
+								<streetAddressLine>Bodmin</streetAddressLine>
+								<postalCode>PL31 1EX</postalCode>
+							</addr>
+							<healthCareProviderLicense classCode="PROV">
+								<Organization classCode="ORG" determinerCode="INSTANCE">
+									<id extension="5FPCT" root="1.2.826.0.1285.0.1.10"/>
+									<code code="005" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94"/>
+									<name>Fowey Primary Care Team</name>
+								</Organization>
+							</healthCareProviderLicense>
+						</representedOrganization>
+					</AgentPerson>
+				</responsibleParty>
+				<pertinentInformation2 typeCode="PERT" contextConductionInd="true">
+					<seperatableInd value="false"/>
+					<pertinentPrescriptionID classCode="OBS" moodCode="EVN">
+						<code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="PID"/>
+						<value root="2.16.840.1.113883.2.1.3.2.4.18.8" extension="__PRESCRIPID__"/>
+					</pertinentPrescriptionID>
+				</pertinentInformation2>
+				<pertinentInformation3 typeCode="PERT" contextConductionInd="true">
+					<seperatableInd value="false"/>
+					<pertinentResponse classCode="OBS" moodCode="EVN">
+						<code code="CRR" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30"/>
+						<value codeSystem="2.16.840.1.113883.2.1.3.2.4.17.19" code="0002" displayName="Prescription/item was not cancelled. With dispenser. Marked for cancellation"/>
+					</pertinentResponse>
+				</pertinentInformation3>
+				<pertinentInformation4 typeCode="PERT" inversionInd="false" negationInd="false">
+					<seperatableInd value="true"/>
+					<pertinentCancellationRequestRef classCode="ACTN" moodCode="RQO">
+						<id root="__ORIGINAL_MSGID_XPATH__"/>
+					</pertinentCancellationRequestRef>
+				</pertinentInformation4>
+			</CancellationResponse>
+		</hl7:subject>
+	</hl7:ControlActEvent>
+</hl7:PORX_IN050101UK31>
