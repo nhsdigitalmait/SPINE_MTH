@@ -2,7 +2,8 @@
 # Richard Robinson, 19th February 2013
 #
 BEGIN RESPONSES
-no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
+no_ebXMLack_response class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.NoResponse
+
 QUPA_IN000007UK01_1902_Response TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2008A_Templates/QUPA_IN000007UK01_sync_template.xml	200 urn:nhs:names:services:pdsquery/QUPA_IN000007UK01
 QUPA_IN000007UK01_Response TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2008A_Templates/QUPA_IN000007UK01_sync_template1.xml	200 urn:nhs:names:services:pdsquery/QUPA_IN000007UK01
 QUPA_IN000007UK01_Response1 TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2008A_Templates/QUPA_IN000007UK01_sync_template2.xml	200 urn:nhs:names:services:pdsquery/QUPA_IN000007UK01
