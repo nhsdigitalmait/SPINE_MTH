@@ -3,7 +3,7 @@
 #
 BEGIN RESPONSES
 no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
-TMS_NACK_Response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/GPES_Templates/MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
+TMS_NACK_Response TKW_ROOT/config/SPINE_MTH/simulator_config/GPES_Templates/MCCI_IN010000UK13_template.xml	202 urn:nhs:names:services:gpes/MCCI_IN010000UK13
 do_process	NONE	0
 END RESPONSES
 

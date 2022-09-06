@@ -3,17 +3,17 @@
 #
 BEGIN RESPONSES
 no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
-PORX_IN090101UK31_MCCI_IN010000UK13_0705_response  /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0705.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN090101UK31_MCCI_IN010000UK13_0706_response  /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0706.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN132004UK30_PORX_IN110101UK30_0524_8_response  /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/PORX_IN110101UK30_05_24_2_10_template.xml 202 urn:nhs:names:services:mm/PORX_IN110101UK30
-PORX_IN100101UK31_MCCI_IN010000UK13_0703_response  /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0703.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN080101UK31_MCCI_IN010000UK13_0708_response  /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0708.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN080101UK31_MCCI_IN010000UK13_0709_response  /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0709.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN080101UK31_MCCI_IN010000UK13_1713_4_response  /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_1713_4.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN080101UK31_MCCI_IN010000UK13_0710_response  /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0710.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN080101UK31_MCCI_IN010000UK13_0718_response  /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0718.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-soap_fault	 /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500	
-ebXML_error	 /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+PORX_IN090101UK31_MCCI_IN010000UK13_0705_response  TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0705.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN090101UK31_MCCI_IN010000UK13_0706_response  TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0706.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN132004UK30_PORX_IN110101UK30_0524_8_response  TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/PORX_IN110101UK30_05_24_2_10_template.xml 202 urn:nhs:names:services:mm/PORX_IN110101UK30
+PORX_IN100101UK31_MCCI_IN010000UK13_0703_response  TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0703.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN080101UK31_MCCI_IN010000UK13_0708_response  TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0708.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN080101UK31_MCCI_IN010000UK13_0709_response  TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0709.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN080101UK31_MCCI_IN010000UK13_1713_4_response  TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_1713_4.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN080101UK31_MCCI_IN010000UK13_0710_response  TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0710.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN080101UK31_MCCI_IN010000UK13_0718_response  TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Dispenser_v4_Templates/MCCI_IN010000UK13_0718.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+soap_fault	 TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500	
+ebXML_error	 TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
 do_process	NONE	0
 END RESPONSES
 

@@ -3,11 +3,11 @@
 #
 BEGIN RESPONSES
 no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
-REPC_IN150016UK05_MCCI_IN010000UK13_1102_4_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SCR_GP_Summary_Ruleset/MCCI_IN010000UK13_1102_4.xml 202 urn:nhs:names:services:psis/MCCI_IN010000UK13
-REPC_IN150016UK05_MCCI_IN010000UK13_1102_8_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SCR_GP_Summary_Ruleset/MCCI_IN010000UK13_1102_8.xml 202 urn:nhs:names:services:psis/MCCI_IN010000UK13
-GET_RESOURCE_PERMISSIONS_INUK01_positive_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SCR_GP_Summary_Ruleset/GET_RESOURCE_PERMISSIONS_RESPONSE_INUK01.xml 200 urn:nhs:names:services:lrsquery/GET_RESOURCE_PERMISSIONS_RESPONSE_INUK01
-soap_fault	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500	
-ebXML_error	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+REPC_IN150016UK05_MCCI_IN010000UK13_1102_4_response TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_GP_Summary_Ruleset/MCCI_IN010000UK13_1102_4.xml 202 urn:nhs:names:services:psis/MCCI_IN010000UK13
+REPC_IN150016UK05_MCCI_IN010000UK13_1102_8_response TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_GP_Summary_Ruleset/MCCI_IN010000UK13_1102_8.xml 202 urn:nhs:names:services:psis/MCCI_IN010000UK13
+GET_RESOURCE_PERMISSIONS_INUK01_positive_response TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_GP_Summary_Ruleset/GET_RESOURCE_PERMISSIONS_RESPONSE_INUK01.xml 200 urn:nhs:names:services:lrsquery/GET_RESOURCE_PERMISSIONS_RESPONSE_INUK01
+soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500	
+ebXML_error	TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
 do_process	NONE	0
 END RESPONSES
 

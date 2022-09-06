@@ -3,12 +3,12 @@
 #
 BEGIN RESPONSES
 no_ebXMLack_response class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.NoResponse
-PORX_IN020101UK31_MCCI_IN010000UK13_DUPLICATE_PRESCRIPTION_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Prescriber_MVP_Templates/MCCI_IN010000UK13_0002_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN020101UK31_MCCI_IN010000UK13_DIGITAL_SIGNATURE_NOT_FOUND_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Prescriber_MVP_Templates/MCCI_IN010000UK13_0003_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN020101UK31_MCCI_IN010000UK13_UNEXPECTED_EXCEPTION_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Prescriber_MVP_Templates/MCCI_IN010000UK13_9999_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN020101UK31_MCCI_IN010000UK13_UNABLE_TO_PROCESS_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Prescriber_MVP_Templates/MCCI_IN010000UK13_5000_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-soap_fault	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
-ebXML_error	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+PORX_IN020101UK31_MCCI_IN010000UK13_DUPLICATE_PRESCRIPTION_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Prescriber_MVP_Templates/MCCI_IN010000UK13_0002_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN020101UK31_MCCI_IN010000UK13_DIGITAL_SIGNATURE_NOT_FOUND_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Prescriber_MVP_Templates/MCCI_IN010000UK13_0003_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN020101UK31_MCCI_IN010000UK13_UNEXPECTED_EXCEPTION_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Prescriber_MVP_Templates/MCCI_IN010000UK13_9999_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN020101UK31_MCCI_IN010000UK13_UNABLE_TO_PROCESS_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Prescriber_MVP_Templates/MCCI_IN010000UK13_5000_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
+ebXML_error	TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
 do_process	NONE	0
 END RESPONSES
 

@@ -3,10 +3,10 @@
 #
 BEGIN RESPONSES
 no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
-PORX_IN020101UK31_MCCI_IN010000UK13_InvalidMsgRejection_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Prescriber_v4_Templates/MCCI_IN010000UK13_1_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-PORX_IN020101UK31_MCCI_IN010000UK13_DuplicateEliminationOff_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ETP_Prescriber_v4_Templates/MCCI_IN010000UK13_2_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
-soap_fault	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
-ebXML_error	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+PORX_IN020101UK31_MCCI_IN010000UK13_InvalidMsgRejection_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Prescriber_v4_Templates/MCCI_IN010000UK13_1_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+PORX_IN020101UK31_MCCI_IN010000UK13_DuplicateEliminationOff_response TKW_ROOT/config/SPINE_MTH/simulator_config/ETP_Prescriber_v4_Templates/MCCI_IN010000UK13_2_template.xml 202 urn:nhs:names:services:mm/MCCI_IN010000UK13
+soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
+ebXML_error	TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
 do_process	NONE	0
 END RESPONSES
 

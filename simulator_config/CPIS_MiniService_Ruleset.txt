@@ -3,11 +3,11 @@
 #
 BEGIN RESPONSES
 no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
-MCCI_IN010000UK13_sync_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/CPIS_Templates/MCCI_IN010000UK13_sync_template.xml	200 urn:nhs:names:services:pds/MCCI_IN010000UK13
-QUPC_IN000006GB01_REPC_IN000007GB01_Successful_Response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/CPIS_Templates/REPC_IN000007GB01_sync_template1.xml 200 urn:nhs:names:services:cpisquery/REPC_IN000007GB01
-QUPC_IN000006GB01_QUQI_IN010000UK14_Response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/CPIS_Templates/QUPC_IN000006GB01_QUQI_IN010000UK14_sync_template.xml 200 urn:nhs:names:services:cpisquery/QUQI_IN010000UK14
-soap_fault	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
-ebXML_error	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+MCCI_IN010000UK13_sync_response TKW_ROOT/config/SPINE_MTH/simulator_config/CPIS_Templates/MCCI_IN010000UK13_sync_template.xml	200 urn:nhs:names:services:pds/MCCI_IN010000UK13
+QUPC_IN000006GB01_REPC_IN000007GB01_Successful_Response TKW_ROOT/config/SPINE_MTH/simulator_config/CPIS_Templates/REPC_IN000007GB01_sync_template1.xml 200 urn:nhs:names:services:cpisquery/REPC_IN000007GB01
+QUPC_IN000006GB01_QUQI_IN010000UK14_Response TKW_ROOT/config/SPINE_MTH/simulator_config/CPIS_Templates/QUPC_IN000006GB01_QUQI_IN010000UK14_sync_template.xml 200 urn:nhs:names:services:cpisquery/QUQI_IN010000UK14
+soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
+ebXML_error	TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
 do_process	NONE	0
 END RESPONSES
 
