@@ -3,9 +3,9 @@
 #
 BEGIN RESPONSES
 no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
-GET_RESOURCE_PERMISSIONS_INUK01_MCCI_IN010000UK13_06_response TKW_ROOT/config/SPINE_MTH/simulator_config/ACS_Ruleset/MCCI_IN010000UK13_06.xml 200 urn:nhs:names:services:lrsquery/MCCI_IN010000UK13
-soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500	
-ebXML_error	TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+GET_RESOURCE_PERMISSIONS_INUK01_MCCI_IN010000UK13_06_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ACS_Ruleset/MCCI_IN010000UK13_06.xml 200 urn:nhs:names:services:lrsquery/MCCI_IN010000UK13
+soap_fault	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500	
+ebXML_error	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
 do_process	NONE	0
 END RESPONSES
 

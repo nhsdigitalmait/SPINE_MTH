@@ -12,12 +12,12 @@
 #
 BEGIN RESPONSES
 no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
-QUPC_IN160101UK05_QUPC_IN160102UK05_Successful_Response TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/PSISDocumentListDataRetrieval_QUPC_IN160102UK05.xml 202 nhs:names:services:psisquery/QUPC_IN160102UK05
-QUPC_IN160103UK05_QUPC_IN160104UK05_Successful_Response TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/PSISDocumentDataRetrieval_QUPC_IN160104UK05.xml 202 nhs:names:services:psisquery/QUPC_IN160104UK05
-MCCI_IN010000UK13_async_response TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/MCCI_IN010000UK13_async_template.xml	202 urn:nhs:names:services:psisquery/MCCI_IN010000UK13
-MCCI_IN010000UK13_Success	TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/MCCI_IN010000UK13_Success.xml 202 urn:nhs:names:services:psisquery/MCCI_IN010000UK13
-QUQI_IN010000UK14_Response	TKW_ROOT/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/QUQI_IN010000UK14_Response.xml 202 urn:nhs:names:services:psisquery/QUQI_IN010000UK14
-soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
+QUPC_IN160101UK05_QUPC_IN160102UK05_Successful_Response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/PSISDocumentListDataRetrieval_QUPC_IN160102UK05.xml 202 nhs:names:services:psisquery/QUPC_IN160102UK05
+QUPC_IN160103UK05_QUPC_IN160104UK05_Successful_Response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/PSISDocumentDataRetrieval_QUPC_IN160104UK05.xml 202 nhs:names:services:psisquery/QUPC_IN160104UK05
+MCCI_IN010000UK13_async_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/MCCI_IN010000UK13_async_template.xml	202 urn:nhs:names:services:psisquery/MCCI_IN010000UK13
+MCCI_IN010000UK13_Success	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/MCCI_IN010000UK13_Success.xml 202 urn:nhs:names:services:psisquery/MCCI_IN010000UK13
+QUQI_IN010000UK14_Response	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SCR_MiniService_Ruleset/QUQI_IN010000UK14_Response.xml 202 urn:nhs:names:services:psisquery/QUQI_IN010000UK14
+soap_fault	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500
 do_process	NONE	0
 END RESPONSES
 

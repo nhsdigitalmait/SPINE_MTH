@@ -3,14 +3,14 @@
 #
 BEGIN RESPONSES
 no_ebXMLack_response class:org.warlock.tk.internalservices.rules.routingactor.NoResponse
-QUPA_IN000007UK03_1902_Response TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2008B_Templates/QUPA_IN000007UK03_sync_template.xml	200 urn:nhs:names:services:pdsquery/QUPA_IN000007UK03
-MCCI_IN010000UK13_1412_response TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2008B_Templates/MCCI_IN010000UK13_async_template.xml	202 urn:nhs:names:services:pds/MCCI_IN010000UK13
-QUPA_IN000007UK03_neg TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2008B_Templates/QUQI_IN010000UK14_sync_template.xml	200	urn:nhs:names:services:pdsquery/QUQI_IN010000UK14
-PRPA_IN000203UK06_pos TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2008B_Templates/PRPA_IN000202UK01_async_template.xml	202 urn:nhs:names:services:pds/PRPA_IN000202UK01
-QUPA_IN000008UK05_QUPA_IN000009UK06_Successful_Response TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2008B_Templates/QUPA_IN000009UK06_sync_template.xml 200 urn:nhs:names:services:pdsquery/QUPA_IN000009UK06
-QUPA_IN000008UK05_QUQI_IN010000UK14_Response TKW_ROOT/config/SPINE_MTH/simulator_config/PDS2008B_Templates/QUQI_IN010000UK14_sync_template.xml 200 urn:nhs:names:services:pdsquery/QUQI_IN010000UK14
-soap_fault	TKW_ROOT/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500	
-ebXML_error	TKW_ROOT/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
+QUPA_IN000007UK03_1902_Response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/PDS2008B_Templates/QUPA_IN000007UK03_sync_template.xml	200 urn:nhs:names:services:pdsquery/QUPA_IN000007UK03
+MCCI_IN010000UK13_1412_response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/PDS2008B_Templates/MCCI_IN010000UK13_async_template.xml	202 urn:nhs:names:services:pds/MCCI_IN010000UK13
+QUPA_IN000007UK03_neg /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/PDS2008B_Templates/QUQI_IN010000UK14_sync_template.xml	200	urn:nhs:names:services:pdsquery/QUQI_IN010000UK14
+PRPA_IN000203UK06_pos /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/PDS2008B_Templates/PRPA_IN000202UK01_async_template.xml	202 urn:nhs:names:services:pds/PRPA_IN000202UK01
+QUPA_IN000008UK05_QUPA_IN000009UK06_Successful_Response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/PDS2008B_Templates/QUPA_IN000009UK06_sync_template.xml 200 urn:nhs:names:services:pdsquery/QUPA_IN000009UK06
+QUPA_IN000008UK05_QUQI_IN010000UK14_Response /home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/PDS2008B_Templates/QUQI_IN010000UK14_sync_template.xml 200 urn:nhs:names:services:pdsquery/QUQI_IN010000UK14
+soap_fault	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/SoapFault_Template.xml	500	
+ebXML_error	/home/riro/TKW-5.0.5/TKW/config/SPINE_MTH/simulator_config/ebXMLError_template.xml	200 ebXMLerror
 do_process	NONE	0
 END RESPONSES
 
